@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import Navbar from "./components/Navbar"
+import TextForm from "./components/TextForm"
 
 function App() {
-  return (
-    <div className="App">
-      <h1>first react app</h1>
-    </div>
-  );
+	return (
+		<>
+			<Navbar title="React App" />
+			<div className="container">
+				<TextForm heading="Enter text"/>
+			</div>
+		</>
+	)
 }
 
-export default App;
+export default App
